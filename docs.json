@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Docs",
+        "tab": "DOCS",
         "groups": [
           {
             "group": "Get Started",
@@ -89,6 +89,14 @@
             "icon": "book",
             "pages": [
               "guides/widget-setup"
+            ]
+          },
+          {
+            "group": "Legal",
+            "icon": "file-contract",
+            "pages": [
+              "legal/tos",
+              "legal/privacy"
             ]
           }
         ]
