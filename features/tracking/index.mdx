@@ -1,0 +1,172 @@
+---
+title: "Real-Time Tracking"
+description: "Live stream tracking, session management, and viewer analytics"
+icon: "radar"
+---
+
+# Real-Time Tracking
+
+LiveSuite tracks pump.fun livestreams in real-time, providing accurate data on viewer counts, streaming sessions, and token activity. Everything updates automatically as streams go live or go offline.
+
+## Live Stream Tracking
+
+We continuously monitor all active streams, updating data every 30 seconds to keep everything current.
+
+**What We Track:**
+- Active livestreams across the platform
+- Viewer counts for each token
+- Stream status (live/offline)
+- New token launches
+- Session start and end times
+
+We monitor streams using multiple methods to catch all active streams and ensure we don't miss anything.
+
+## Streaming Sessions
+
+Every stream gets tracked as a session with start time, duration, and viewer metrics.
+
+**How Sessions Work:**
+1. **Starts** - When a stream goes live, a new session begins
+2. **Updates** - Viewer counts and duration update while streaming
+3. **Resumes** - If a stream pauses and comes back, the session continues
+4. **Ends** - When offline, the session is saved with total stats
+
+**Session Data Includes:**
+- Start and end timestamps
+- Total streaming duration
+- Peak viewer count
+- Average viewers
+- Total streaming time
+
+## Viewer Tracking
+
+Real-time viewer counts keep everything current.
+
+**Data Collection:**
+- Viewer snapshots every 30 seconds
+- Peak viewer tracking
+- Historical viewer charts
+- Aggregate statistics
+
+**Viewer Metrics:**
+- Current viewers per token
+- Total viewers across platform
+- Average viewers per stream
+- Peak concurrent viewers (all-time)
+- Viewer trends over time
+
+## User Activity Tracking
+
+Beyond basic viewer counts, we track detailed user movements and activity patterns.
+
+**Movement Tracking:**
+- Join and leave events
+- Token-to-token movements
+- Quick movements (&lt;30s)
+- Normal movements (&lt;2min)
+- Long movements (&lt;10min)
+
+**Message Tracking:**
+- Chat message collection
+- Message-based join detection
+- User message history per token
+- Message frequency analysis
+
+**Use Cases:**
+- Understanding user flow between tokens
+- Detecting coordinated activity
+- Analyzing engagement patterns
+- Tracking individual user journeys
+
+## Metric Snapshots
+
+We collect comprehensive platform metrics every 10 minutes, creating a historical record of platform health.
+
+**Metrics Captured:**
+- Total viewers (current aggregate)
+- Live streamers count
+- Average session duration
+- Longest active session
+- Sessions started today
+- Total streaming time (all-time)
+- Current active time
+
+This data powers our historical charts and trend analysis, letting you see how the platform has grown over time.
+
+## Real-Time Updates
+
+Everything updates automatically. You don't need to refresh pages—data flows in real-time.
+
+**Update Channels:**
+- **Global Stats** - Platform-wide statistics
+- **Token Updates** - Individual token viewer counts
+- **New Tokens** - Alerts when tokens launch
+- **Trending Updates** - Trending token changes
+- **Analytics** - Analytics updates when ready
+
+**Update Frequency:**
+- Viewer data: Every 30 seconds
+- Global stats: Every 30 seconds
+- Metric snapshots: Every 10 minutes
+- Analytics: Updates automatically when ready
+
+## Status Detection
+
+We automatically detect whether streams are live or offline.
+
+**Live Detection:**
+- Streams with active viewers
+- Recent activity indicators
+- Session validation
+
+**Offline Detection:**
+- Inactive for extended periods
+- No viewer activity
+- Session completion
+
+This powers our filtering options, letting you see only live streams or only offline ones when needed.
+
+## Search & Filtering
+
+**Sorting Options:**
+- By viewers (highest first)
+- By streaming time (longest first)
+- By market cap (largest first)
+- By creator fees (most earned)
+
+**Filters:**
+- Market cap thresholds
+- Live/offline status
+- Time-based (new tokens, trending)
+- Search by name, symbol, or mint ID
+
+## Using Tracking Data
+
+**For Streamers:**
+- Monitor your viewer counts in real-time
+- Track session history and consistency
+- See your peak performance metrics
+- Understand your streaming patterns
+
+**For Traders:**
+- Spot opportunities early
+- Track token activity and engagement
+- Identify trends before they peak
+- Monitor user movements between tokens
+
+<CardGroup cols={2}>
+  <Card
+    title="Analytics Dashboard"
+    icon="chart-bar"
+    href="/features/analytics"
+  >
+    Visualize tracking data
+  </Card>
+  <Card
+    title="Tools"
+    icon="wrench"
+    href="/features/tools"
+  >
+    Check out trading tools
+  </Card>
+</CardGroup>

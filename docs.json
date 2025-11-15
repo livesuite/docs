@@ -1,0 +1,139 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "LiveSuite Docs",
+  "colors": {
+    "primary": "#1eeb13",
+    "light": "#1eeb13",
+    "dark": "#1eeb13"
+  },
+  "favicon": "/favicon.png",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Docs",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "index",
+              "guides/getting-started"
+            ]
+          },
+    {
+      "group": "Features",
+      "icon": "star",
+      "pages": [
+        {
+          "group": "OBS Widgets",
+          "icon": "grid",
+          "pages": [
+            "features/widgets/index",
+            "features/widgets/timer",
+            "features/widgets/marketcap-goal",
+            "features/widgets/fees-goal",
+            "features/widgets/holder-count",
+            "features/widgets/token-stats",
+            "features/widgets/ranking",
+            "features/widgets/live-chat"
+          ]
+        },
+        {
+          "group": "Tools",
+          "icon": "wrench",
+          "pages": [
+            "features/tools/index",
+            "features/tools/fee-calculator",
+            "features/tools/botting-detector",
+            "features/tools/chat-moderation",
+            "features/tools/telegram-monitors",
+            "features/tools/telegram-scanner"
+          ]
+        },
+        {
+          "group": "Tracking",
+          "icon": "radar",
+          "pages": [
+            "features/tracking/index"
+          ]
+        },
+        {
+          "group": "Visualizations",
+          "icon": "chart-bar",
+          "pages": [
+            "features/analytics",
+            "features/galaxy/index"
+          ]
+        },
+        "features/dashboard"
+      ]
+    },
+    {
+      "group": "External Tools",
+      "icon": "globe",
+      "pages": [
+        "external-tools/discord-scanner",
+        "external-tools/telegram-scanner",
+        "external-tools/browser-extension"
+      ]
+    },
+    {
+      "group": "Integrations",
+      "icon": "plug",
+      "pages": [
+        "integrations/x402-sponsorships"
+      ]
+    },
+          {
+            "group": "Guides",
+            "icon": "book",
+            "pages": [
+              "guides/widget-setup"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API",
+        "openapi": "api/api.json",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/10.png",
+    "dark": "/logo/10.png"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "livesuite.app",
+        "href": "https://livesuite.app"
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/livesuiteapp",
+      "telegram": "https://t.me/livesuite"
+    }
+  },
+  "api": {
+    "playground": {
+      "display": "interactive",
+      "proxy": false
+    },
+    "examples": {
+      "languages": ["curl", "javascript", "python"],
+      "defaults": "required",
+      "prefill": true
+    }
+  }
+}

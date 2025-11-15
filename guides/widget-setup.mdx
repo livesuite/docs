@@ -1,0 +1,154 @@
+---
+title: "Widget Setup Guide"
+description: "Step-by-step tutorial for setting up OBS widgets"
+---
+
+# Widget Setup Guide
+
+This guide walks you through setting up LiveSuite widgets in OBS Studio. It's easier than you think!
+
+## Prerequisites
+
+- OBS Studio installed
+- Your token's mint address
+- A LiveSuite widget URL
+
+## Step 1: Get Your Widget URL
+
+First, choose which widget you want to use. Head to the [Widgets documentation](/features/widgets/index) to see all available types.
+
+**Common widget URLs look like:**
+- Timer: `https://livesuite.app/widgets/obs-timer/YOUR_MINT_ID`
+- Market Cap Goal: `https://livesuite.app/widgets/marketcap-goal/YOUR_MINT_ID/1000000`
+- Holder Count: `https://livesuite.app/widgets/holder-count/YOUR_MINT_ID`
+
+Replace `YOUR_MINT_ID` with your actual token mint address.
+
+<Tip>
+  You can find your mint address on pump.fun or in your token's URL. It's the long string of characters after `/token/`.
+</Tip>
+
+## Step 2: Add Browser Source in OBS
+
+1. In OBS Studio, right-click in your **Sources** panel
+2. Select **Add** → **Browser Source**
+3. Give it a name (e.g., "Stream Timer" or "Market Cap Goal")
+4. Click **OK**
+
+## Step 3: Configure the Browser Source
+
+In the Browser Source settings:
+
+1. **URL:** Paste your widget URL here
+2. **Width:** Set to `1920` (or your stream resolution width)
+3. **Height:** Set to `1080` (or your stream resolution height)
+4. Check **Shutdown source when not visible** (saves resources)
+5. **Custom CSS:** Leave blank unless you need custom styling
+6. Click **OK**
+
+## Step 4: Position and Size
+
+Your widget should appear in your preview. You can:
+- Drag it to position it where you want
+- Resize it by dragging the corners
+- Adjust transparency if needed
+
+<Tip>
+  For overlays, smaller sizes work better. Try starting with 400-600px width and adjust to fit your design.
+</Tip>
+
+## Step 5: Test It
+
+1. Make sure your token is live on pump.fun
+2. Check that the widget is updating (viewer counts, timers, etc. should change)
+3. Preview your stream to see how it looks
+
+## Multiple Widgets
+
+You can add multiple widgets to the same scene:
+
+1. Repeat steps 2-4 for each widget
+2. Position them in different locations
+3. Name them clearly so you can find them later
+
+Common combinations:
+- Timer + Market Cap Goal
+- Token Stats + Ranking
+- Holder Count + Creator Fees Goal
+
+## Common Issues
+
+**Widget not showing:**
+- Check that the URL is correct (including the mint ID)
+- Make sure your token is currently live
+- Try refreshing the browser source (right-click → Refresh)
+
+**Widget not updating:**
+- Widgets update every few seconds, so small delays are normal
+- If it's been stuck for more than 30 seconds, check your internet connection
+- Make sure "Shutdown source when not visible" is checked
+
+**Widget too big/small:**
+- Adjust the width/height in browser source settings
+- Or resize it directly in OBS by dragging the corners
+
+**Transparency issues:**
+- Widgets support transparent backgrounds by default
+- If you see a white background, check your widget's settings or try a different widget type
+
+## Advanced: Custom Styling
+
+Some widgets support URL parameters for custom styling. Check the widget documentation for available parameters.
+
+Example:
+```
+https://livesuite.app/widgets/obs-timer/YOUR_MINT_ID?color=ffffff&fontSize=24
+```
+
+## Saving Your Setup
+
+Once you have your widgets configured:
+1. Save your scene in OBS
+2. Your widget configurations are saved automatically
+3. They'll load the next time you open OBS
+
+If you're logged into LiveSuite, you can also save widget configurations in your dashboard for easy reference.
+
+## Widget Recommendations
+
+**For Timers:**
+- Position: Top-left or bottom-left corner
+- Size: Medium (400-600px width)
+- Use: All streams
+
+**For Market Cap Goals:**
+- Position: Near token info or center
+- Size: Medium to large (500-800px width)
+- Use: When approaching milestones
+
+**For Rankings:**
+- Position: Top-right corner
+- Size: Small to medium (300-500px width)
+- Use: When in top rankings
+
+**For Holder Counts:**
+- Position: Bottom overlay area
+- Size: Small (300-400px width)
+- Use: Community-focused streams
+
+<CardGroup cols={2}>
+  <Card
+    title="Widget Types"
+    icon="grid"
+    href="/features/widgets/index"
+  >
+    See all available widgets
+  </Card>
+  <Card
+    title="Getting Started"
+    icon="rocket"
+    href="/guides/getting-started"
+  >
+    Back to getting started
+  </Card>
+</CardGroup>

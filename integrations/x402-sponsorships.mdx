@@ -1,0 +1,157 @@
+---
+title: "x402 Sponsorships"
+description: "Sponsor content creators and token communities with seamless cryptocurrency payments"
+icon: "credit-card"
+---
+
+# x402 Sponsorships
+
+Our platform integrates with the x402 payment protocol, an internet-native payment system that uses HTTP 402 "Payment Required" status codes for seamless cryptocurrency payments. This integration enables users to sponsor content creators and token communities directly through our platform, with automatic payment handling via the Solana blockchain.
+
+## What is x402?
+
+The x402 payment protocol is a revolutionary approach to internet payments that:
+
+- Uses HTTP 402 status code (originally reserved for payment systems)
+- Enables automatic payment interception and processing
+- Supports native cryptocurrency payments (USDC on Solana)
+- Provides seamless payment flows without redirects or external payment pages
+- Integrates directly into existing HTTP-based APIs
+
+## Partnership with Pyro.buzz
+
+We have partnered with Pyro.buzz to provide seamless sponsorship capabilities for content creators and token communities. Pyro.buzz operates the x402 payment service that handles:
+
+### Sponsor Management
+
+- Token-based sponsorships (promoting specific tokens)
+- External community sponsorships (promoting external projects/communities)
+- Dynamic pricing based on content engagement and market conditions
+
+### Payment Processing
+
+- Automatic USDC payment collection
+- Transaction verification and confirmation
+- Payment receipt generation and logging
+
+### Content Promotion
+
+- Integration with Pyro's creator ecosystem
+- Real-time sponsorship tracking
+- Burn and swap transaction management
+
+## How It Works
+
+Our x402 integration follows a streamlined flow:
+
+### 1. Sponsor Selection
+
+- Users browse available sponsors from the 402 API
+- Each sponsor has associated costs in USD
+- Sponsors can be token-based or external communities
+
+### 2. Cost Calculation
+
+- System queries the 402 API for current sponsorship costs
+- Costs are dynamic and based on market conditions
+- Users see real-time pricing before committing
+
+### 3. Validation Phase
+
+- Before payment, sponsorship details are validated
+- 402 API confirms sponsor availability and pricing
+- System prepares execution payload with required data
+
+### 4. Payment Execution
+
+- Uses x402-axios library for automatic payment handling
+- Library intercepts HTTP 402 responses
+- Automatically creates and signs Solana payment transactions
+- Retries request with payment header after transaction confirmation
+
+### 5. Transaction Flow
+
+- If user has sufficient USDC: Direct payment from existing balance
+- If user needs more USDC: Automatic SOL-to-USDC swap via Jupiter Aggregator
+- Transaction is broadcast to Solana network
+
+### 6. Confirmation
+
+- 402 API confirms successful payment
+- Sponsorship is activated
+- User receives confirmation with transaction signatures
+
+## One Click Sponsoring
+
+Our "One Click Sponsoring" feature allows users to:
+
+### Select Content to Sponsor
+
+- Choose any token or content creator
+- View sponsorship costs in real-time
+- See available sponsor options (tokens or communities)
+
+### Choose Sponsor Type
+
+**Token Sponsorships**: Promote a specific token/coin
+- Includes token metadata (name, symbol, decimals, mint address)
+- Promotes token visibility in the ecosystem
+- Supports token communities and projects
+
+**External Sponsorships**: Promote external communities/projects
+- Links to external websites and communities
+- Supports non-token projects and initiatives
+- Custom community identification
+
+### Automatic Payment Processing
+
+- Seamless USDC payment handling
+- Automatic balance checking
+- Smart swap execution when needed
+- Transaction confirmation and receipt
+
+### Real-time Updates
+
+- Immediate balance updates after sponsorship
+- Transaction history tracking
+- Sponsorship confirmation details
+
+## User Experience
+
+The sponsorship flow is designed for simplicity:
+
+1. User selects content to sponsor
+2. System shows available sponsors and costs
+3. User selects sponsor and confirms amount
+4. System handles all payment complexity automatically
+5. User receives instant confirmation
+
+No manual transaction creation, no complex wallet operations, no external redirects - just seamless sponsorship with automatic payment handling.
+
+## Integration Benefits
+
+### For Users
+
+- Simple, one-click sponsorship
+- Automatic payment handling
+- No need to understand blockchain complexity
+- Real-time cost transparency
+
+### For Creators
+
+- Direct monetization opportunities
+- Automatic payment collection
+- Transparent sponsorship tracking
+- Integration with Pyro ecosystem
+
+### For Token Communities
+
+- Easy promotion and visibility
+- Community-driven marketing
+- Automated payment processing
+- Engagement tracking
+
+## Conclusion
+
+Our x402 integration with Pyro.buzz provides a cutting-edge sponsorship platform that combines the power of blockchain payments with the simplicity of traditional web payments. Users can sponsor content and communities with ease, while creators and token projects benefit from seamless monetization and promotion capabilities.
+

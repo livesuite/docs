@@ -1,0 +1,65 @@
+---
+title: "Ranking"
+description: "Display where your token ranks among all streamers"
+icon: "trophy"
+---
+
+# Ranking Widget
+
+Display where your token ranks among all streamers. Show off when you're in the top rankings.
+
+## Configuration
+
+**Required:**
+- **Token Address (mintId)** - Your token's Solana mint address
+- **Ranking Type** - `mcap` or `viewers` (market cap or viewer count)
+- **Max Rank** - Maximum rank before hiding widget (1-1000)
+
+**Optional:**
+- **Accent Color** - Customizable accent color
+
+## Widget URL
+
+**Top 10 by Market Cap:**
+```
+https://livesuite.app/widgets/ranking/YOUR_MINT_ID/mcap/10
+```
+
+**Top 20 by Viewers:**
+```
+https://livesuite.app/widgets/ranking/YOUR_MINT_ID/viewers/20?accentColor=#00ff88
+```
+
+## Features
+
+- Market cap ranking (`mcap`)
+- Viewer count ranking (`viewers`)
+- Auto-hide when above max rank threshold
+- Real-time ranking updates
+- Configurable maximum rank display
+
+## Use Case
+
+Show off when you're in the top 10 or top 20 streamers. The widget automatically hides if you drop below your set threshold, so it only shows when it matters.
+
+**Recommended Setup:**
+- Position: Top-right corner
+- Size: Small to medium (300-500px width)
+- Use when in top rankings
+
+<CardGroup cols={2}>
+  <Card
+    title="Widget Overview"
+    icon="grid"
+    href="/features/widgets"
+  >
+    Back to widgets overview
+  </Card>
+  <Card
+    title="Widget Visualizer"
+    icon="globe"
+    href="https://livesuite.app/visualizer/"
+  >
+    Create a ranking widget
+  </Card>
+</CardGroup>

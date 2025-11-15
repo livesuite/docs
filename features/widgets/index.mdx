@@ -1,0 +1,164 @@
+---
+title: "OBS Widgets"
+description: "Professional widgets for your pump.fun streams - setup guide and overview"
+icon: "grid"
+---
+
+# OBS Widgets
+
+Transform your streams with professional, real-time widgets that update automatically. All widgets work seamlessly with OBS browser sources and update in real-time as your stream data changes.
+
+<Note>
+  All widgets support customizable styling via URL parameters and work with transparent backgrounds.
+</Note>
+
+## Widget Visualizer
+
+The Widget Visualizer is your one-stop shop for creating, previewing, and managing OBS widgets. Access it at `livesuite.app/visualizer/` to build custom widgets with live previews.
+
+**Interactive Builder:**
+- Choose from 7 widget types
+- Type-specific configuration forms
+- Real-time validation
+- Color picker with hex input
+- Live preview as you configure
+
+**Preview System:**
+- Multiple preview sizes (small, medium, large, fullscreen)
+- Real-time data updates
+- Demo mode without authentication
+- Shows exactly how it'll look in OBS
+
+**Save & Load (Authenticated Users):**
+- Save widgets to your account
+- Name your widgets
+- Set widgets as public or private
+- Edit, duplicate, or delete saved widgets
+- Access from your dashboard
+
+<Tip>
+  You can test widgets in demo mode without signing in. Sign in to save your configurations for later.
+</Tip>
+
+## Setting Up in OBS
+
+Setting up widgets in OBS is straightforward:
+
+**Step 1: Get Your Widget URL**
+
+Use the [Widget Visualizer](https://livesuite.app/visualizer/) or copy a widget URL from the individual widget pages. Each widget page has example URLs you can customize.
+
+**Step 2: Add Browser Source**
+
+1. In OBS Studio, right-click in your **Sources** panel
+2. Select **Add** → **Browser Source**
+3. Give it a name (e.g., "Stream Timer")
+4. Click **OK**
+
+**Step 3: Configure**
+
+1. **URL:** Paste your widget URL
+2. **Width:** Set to `1920` (or your stream resolution width)
+3. **Height:** Set to `1080` (or your stream resolution height)
+4. Check **Shutdown source when not visible**
+5. Click **OK**
+
+**Step 4: Position and Size**
+
+Your widget appears in the preview. Drag it to position, resize by dragging corners, and adjust as needed.
+
+<Tip>
+  For overlays, smaller sizes work better. Try starting with 400-600px width.
+</Tip>
+
+## Widget Features
+
+All widgets share these capabilities:
+
+- **OBS Browser Source Compatible** - Works directly with OBS Studio
+- **Real-Time Updates** - Data refreshes automatically
+- **Customizable Styling** - Adjust colors via URL parameters
+- **Transparent Backgrounds** - Perfect for overlays
+- **Responsive Sizing** - Works on any screen size
+- **Always Current** - Updates quickly without lag
+
+## Available Widgets
+
+<CardGroup cols={2}>
+  <Card
+    title="Stream Timer"
+    icon="clock"
+    href="/features/widgets/timer"
+  >
+    Track streaming duration with a formatted timer
+  </Card>
+  <Card
+    title="Market Cap Goal"
+    icon="bullseye"
+    href="/features/widgets/marketcap-goal"
+  >
+    Show progress toward a market cap milestone
+  </Card>
+  <Card
+    title="Creator Fees Goal"
+    icon="wallet"
+    href="/features/widgets/fees-goal"
+  >
+    Track creator fees toward a goal amount
+  </Card>
+  <Card
+    title="Holder Count"
+    icon="users"
+    href="/features/widgets/holder-count"
+  >
+    Display real-time holder count and growth
+  </Card>
+  <Card
+    title="Token Stats"
+    icon="chart-bar"
+    href="/features/widgets/token-stats"
+  >
+    All-in-one widget with comprehensive stats
+  </Card>
+  <Card
+    title="Ranking"
+    icon="trophy"
+    href="/features/widgets/ranking"
+  >
+    Show where your token ranks among streamers
+  </Card>
+  <Card
+    title="Live Chat"
+    icon="message"
+    href="/features/widgets/live-chat"
+  >
+    Display live chat messages from your stream
+  </Card>
+</CardGroup>
+
+## Widget Management
+
+If you're logged in, you can save widget configurations:
+
+- Name your widgets for easy identification
+- Set widgets as public (shareable) or private
+- Save all settings including colors and goals
+- Access saved widgets from your dashboard
+- Edit, duplicate, or delete anytime
+
+<CardGroup cols={2}>
+  <Card
+    title="Widget Visualizer"
+    icon="globe"
+    href="https://livesuite.app/visualizer/"
+  >
+    Create and preview widgets interactively
+  </Card>
+  <Card
+    title="Dashboard"
+    icon="user"
+    href="/features/dashboard"
+  >
+    Manage your saved widgets
+  </Card>
+</CardGroup>
