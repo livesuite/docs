@@ -20,6 +20,14 @@
               "guides/getting-started"
             ]
           },
+          {
+            "group": "$LIVE",
+            "pages": [
+              "live/overview",
+              "live/tokenomics",
+              "live/exit"
+            ]
+          },
     {
       "group": "Features",
       "icon": "star",
