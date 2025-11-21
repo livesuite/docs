@@ -1,0 +1,41 @@
+---
+title: "Pump Fun Bot"
+description: "Automated bot for pump.fun streams with custom commands and moderation"
+icon: "robot"
+---
+
+Automated bot for pump.fun streams that provides custom commands and chat moderation capabilities.
+
+## Usage
+
+There are two ways to use the Pump Fun Bot:
+
+### 1. Custom Commands & Auto Moderator
+
+If the streamer sets up custom commands and the auto moderator through the LiveSuite web app, the bot will use those custom configurations. This allows streamers to create personalized commands and automated moderation rules.
+
+<Card
+  title="Chat Moderation"
+  icon="shield-check"
+  href="/features/tools/chat-moderation"
+>
+  Learn how to set up custom commands and auto moderation
+</Card>
+
+### 2. Default Commands
+
+All streams have default commands enabled that work automatically:
+
+- `!x` - Shows the token's X (Twitter) link
+- `!website` - Shows the token's website link
+- `!web` - Shows the token's website link
+- `!twitter` - Shows the token's Twitter/X link
+- `!telegram` - Shows the token's Telegram link
+- `!dex` - Shows information regarding the token's DexScreener orders
+
+## How It Works
+
+The default commands (`!x`, `!website`, `!web`, `!twitter`, `!telegram`) automatically pull from the token's metadata and display the corresponding social media or website links.
+
+The `!dex` command displays information about the token's DexScreener orders, providing real-time trading data and order book information.
+
