@@ -17,7 +17,8 @@
             "group": "Get Started",
             "pages": [
               "index",
-              "guides/getting-started"
+              "guides/getting-started",
+              "guides/roadmap"
             ]
           },
           {
