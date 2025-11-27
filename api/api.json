@@ -1914,7 +1914,8 @@
                     "type": "object",
                     "properties": {
                       "success": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "example": true
                       },
                       "data": {
                         "type": "object",
@@ -1926,57 +1927,102 @@
                               "properties": {
                                 "id": {
                                   "type": "integer",
-                                  "description": "Ban record ID"
+                                  "description": "Ban record ID",
+                                  "example": 1
                                 },
                                 "username": {
                                   "type": "string",
-                                  "description": "Banned username"
+                                  "description": "Banned username",
+                                  "example": "example_user"
                                 },
                                 "user_address": {
                                   "type": "string",
-                                  "description": "Banned user wallet address"
+                                  "description": "Banned user wallet address",
+                                  "example": "ExampleAddress123456789"
                                 },
                                 "ban_reason": {
                                   "type": "string",
-                                  "description": "Reason for the ban"
+                                  "description": "Reason for the ban",
+                                  "example": "Username pattern match"
                                 },
                                 "triggering_messages": {
                                   "type": "array",
                                   "items": {
                                     "type": "string"
                                   },
-                                  "description": "Messages that triggered the ban"
+                                  "description": "Messages that triggered the ban",
+                                  "example": ["pump fun batch swap and claim sol"]
                                 },
                                 "detection_method": {
                                   "type": "string",
-                                  "description": "Method used to detect the violation"
+                                  "description": "Method used to detect the violation",
+                                  "example": "username_pattern"
                                 },
                                 "banned_at": {
                                   "type": "string",
                                   "format": "date-time",
-                                  "description": "Timestamp when the ban was issued"
+                                  "description": "Timestamp when the ban was issued",
+                                  "example": "2025-11-24T20:37:29.064764Z"
                                 },
                                 "mint_id": {
                                   "type": "string",
-                                  "description": "Token mint ID where the ban occurred (optional)"
+                                  "description": "Token mint ID where the ban occurred (optional)",
+                                  "example": "J3ea4dwQ7cRg83H1AbVfmcZtJuqP9LWWmTDX4GNJpump"
                                 }
                               }
                             }
                           },
                           "count": {
                             "type": "integer",
-                            "description": "Number of banned users returned"
+                            "description": "Number of banned users returned",
+                            "example": 100
                           },
                           "limit": {
                             "type": "integer",
-                            "description": "Limit parameter used"
+                            "description": "Limit parameter used",
+                            "example": 100
                           },
                           "offset": {
                             "type": "integer",
-                            "description": "Offset parameter used"
+                            "description": "Offset parameter used",
+                            "example": 0
+                          }
+                        }
+                      },
+                      "meta": {
+                        "type": "object",
+                        "properties": {
+                          "timestamp": {
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "Timestamp when the data was generated",
+                            "example": "2025-11-27T13:36:22.162Z"
                           }
                         }
                       }
+                    }
+                  },
+                  "example": {
+                    "success": true,
+                    "data": {
+                      "banned_users": [
+                        {
+                          "id": 1,
+                          "username": "example_user",
+                          "user_address": "ExampleAddress123456789",
+                          "ban_reason": "Username pattern match",
+                          "triggering_messages": ["pump fun batch swap and claim sol"],
+                          "detection_method": "username_pattern",
+                          "banned_at": "2025-11-24T20:37:29.064764Z",
+                          "mint_id": "J3ea4dwQ7cRg83H1AbVfmcZtJuqP9LWWmTDX4GNJpump"
+                        }
+                      ],
+                      "count": 100,
+                      "limit": 100,
+                      "offset": 0
+                    },
+                    "meta": {
+                      "timestamp": "2025-11-27T13:36:22.162Z"
                     }
                   }
                 }
