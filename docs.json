@@ -73,8 +73,7 @@
             "features/analytics",
             "features/galaxy/index"
           ]
-        },
-        "features/dashboard"
+        }
       ]
     },
     {
