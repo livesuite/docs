@@ -1868,6 +1868,129 @@
           }
         }
       },
+      "/banned-users": {
+        "get": {
+          "summary": "Get global ban list",
+          "description": "Returns a paginated list of globally banned users from the stream-tracker service",
+          "tags": ["Stream Tracker"],
+          "parameters": [
+            {
+              "in": "query",
+              "name": "limit",
+              "schema": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 100,
+                "default": 100
+              },
+              "description": "Number of results to return (default 100, max 100)"
+            },
+            {
+              "in": "query",
+              "name": "offset",
+              "schema": {
+                "type": "integer",
+                "minimum": 0,
+                "default": 0
+              },
+              "description": "Number of results to skip for pagination (default 0)"
+            },
+            {
+              "in": "query",
+              "name": "username",
+              "required": false,
+              "schema": {
+                "type": "string"
+              },
+              "description": "Optional username filter (case-insensitive partial match)"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of banned users",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "success": {
+                        "type": "boolean"
+                      },
+                      "data": {
+                        "type": "object",
+                        "properties": {
+                          "banned_users": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "integer",
+                                  "description": "Ban record ID"
+                                },
+                                "username": {
+                                  "type": "string",
+                                  "description": "Banned username"
+                                },
+                                "user_address": {
+                                  "type": "string",
+                                  "description": "Banned user wallet address"
+                                },
+                                "ban_reason": {
+                                  "type": "string",
+                                  "description": "Reason for the ban"
+                                },
+                                "triggering_messages": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  },
+                                  "description": "Messages that triggered the ban"
+                                },
+                                "detection_method": {
+                                  "type": "string",
+                                  "description": "Method used to detect the violation"
+                                },
+                                "banned_at": {
+                                  "type": "string",
+                                  "format": "date-time",
+                                  "description": "Timestamp when the ban was issued"
+                                },
+                                "mint_id": {
+                                  "type": "string",
+                                  "description": "Token mint ID where the ban occurred (optional)"
+                                }
+                              }
+                            }
+                          },
+                          "count": {
+                            "type": "integer",
+                            "description": "Number of banned users returned"
+                          },
+                          "limit": {
+                            "type": "integer",
+                            "description": "Limit parameter used"
+                          },
+                          "offset": {
+                            "type": "integer",
+                            "description": "Offset parameter used"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "429": {
+              "description": "Rate limit exceeded (1 request per second per IP)"
+            },
+            "500": {
+              "description": "Server error"
+            }
+          }
+        }
+      },
       "/pyro/value-scores": {
         "get": {
           "summary": "Get Pyro value scores",
