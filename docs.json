@@ -112,7 +112,7 @@
       },
       {
         "tab": "API",
-        "openapi": "api/api.json",
+        "openapi": "https://api.livesuite.app/swagger.json",
         "groups": [
           {
             "group": "Overview",
