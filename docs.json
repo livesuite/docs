@@ -80,8 +80,6 @@
       "group": "External Tools",
       "icon": "globe",
       "pages": [
-        "external-tools/discord-scanner",
-        "external-tools/telegram-scanner",
         "external-tools/pump-fun-bot",
         "external-tools/browser-extension"
       ]
