@@ -15,96 +15,76 @@
         "groups": [
           {
             "group": "Get Started",
-            "pages": [
-              "index",
-              "guides/getting-started",
-              "guides/roadmap"
-            ]
+            "pages": ["index", "guides/getting-started", "guides/roadmap"]
           },
           {
             "group": "$LIVE",
+            "pages": ["live/overview", "live/tokenomics", "live/exit"]
+          },
+          {
+            "group": "Features",
+            "icon": "star",
             "pages": [
-              "live/overview",
-              "live/tokenomics",
-              "live/exit"
+              {
+                "group": "OBS Widgets",
+                "icon": "grid",
+                "pages": [
+                  "features/widgets/index",
+                  "features/widgets/timer",
+                  "features/widgets/marketcap-goal",
+                  "features/widgets/fees-goal",
+                  "features/widgets/holder-count",
+                  "features/widgets/token-stats",
+                  "features/widgets/ranking",
+                  "features/widgets/live-chat"
+                ]
+              },
+              {
+                "group": "Tools",
+                "icon": "wrench",
+                "pages": [
+                  "features/tools/index",
+                  "features/tools/fee-calculator",
+                  "features/tools/botting-detector",
+                  "features/tools/chat-moderation",
+                  "features/tools/telegram-monitors",
+                  "features/tools/telegram-scanner"
+                ]
+              },
+              {
+                "group": "Tracking",
+                "icon": "radar",
+                "pages": ["features/tracking/index"]
+              },
+              {
+                "group": "Visualizations",
+                "icon": "chart-bar",
+                "pages": ["features/analytics", "features/galaxy/index"]
+              }
             ]
           },
-    {
-      "group": "Features",
-      "icon": "star",
-      "pages": [
-        {
-          "group": "OBS Widgets",
-          "icon": "grid",
-          "pages": [
-            "features/widgets/index",
-            "features/widgets/timer",
-            "features/widgets/marketcap-goal",
-            "features/widgets/fees-goal",
-            "features/widgets/holder-count",
-            "features/widgets/token-stats",
-            "features/widgets/ranking",
-            "features/widgets/live-chat"
-          ]
-        },
-        {
-          "group": "Tools",
-          "icon": "wrench",
-          "pages": [
-            "features/tools/index",
-            "features/tools/fee-calculator",
-            "features/tools/botting-detector",
-            "features/tools/chat-moderation",
-            "features/tools/telegram-monitors",
-            "features/tools/telegram-scanner"
-          ]
-        },
-        {
-          "group": "Tracking",
-          "icon": "radar",
-          "pages": [
-            "features/tracking/index"
-          ]
-        },
-        {
-          "group": "Visualizations",
-          "icon": "chart-bar",
-          "pages": [
-            "features/analytics",
-            "features/galaxy/index"
-          ]
-        }
-      ]
-    },
-    {
-      "group": "External Tools",
-      "icon": "globe",
-      "pages": [
-        "external-tools/pump-fun-bot",
-        "external-tools/browser-extension"
-      ]
-    },
-    {
-      "group": "Integrations",
-      "icon": "plug",
-      "pages": [
-        "integrations/x402-sponsorships"
-      ]
-    },
+          {
+            "group": "External Tools",
+            "icon": "globe",
+            "pages": [
+              "external-tools/pump-fun-bot",
+              "external-tools/browser-extension"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "icon": "plug",
+            "pages": ["integrations/x402-sponsorships"]
+          },
           {
             "group": "Guides",
             "icon": "book",
-            "pages": [
-              "guides/widget-setup"
-            ]
+            "pages": ["guides/widget-setup"]
           },
           {
             "group": "Legal",
             "icon": "file-contract",
-            "pages": [
-              "legal/tos",
-              "legal/privacy"
-            ]
+            "pages": ["legal/tos", "legal/privacy"]
           }
         ]
       },
@@ -114,9 +94,7 @@
         "groups": [
           {
             "group": "Overview",
-            "pages": [
-              "api/overview"
-            ]
+            "pages": ["api/overview"]
           }
         ]
       }
@@ -136,7 +114,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/livesuiteapp",
+      "x": "https://x.com/livesuite",
       "telegram": "https://t.me/livesuite"
     }
   },

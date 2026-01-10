@@ -5,7 +5,7 @@ Documentation for LiveSuite - the all-in-one suite for traders and streamers on 
 ## LiveSuite
 
 - **Main Site:** [livesuite.app](https://livesuite.app)
-- **X (Twitter):** [@livesuiteapp](https://x.com/livesuiteapp)
+- **X (Twitter):** [@livesuiteapp](https://x.com/livesuite)
 - **Telegram:** [t.me/livesuite](https://t.me/livesuite)
 
 ## Documentation
