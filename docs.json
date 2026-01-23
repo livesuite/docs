@@ -87,16 +87,6 @@
             "pages": ["legal/tos", "legal/privacy"]
           }
         ]
-      },
-      {
-        "tab": "API",
-        "openapi": "https://api.livesuite.app/swagger.json",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": ["api/overview"]
-          }
-        ]
       }
     ]
   },
@@ -116,17 +106,6 @@
     "socials": {
       "x": "https://x.com/livesuite",
       "telegram": "https://t.me/livesuite"
-    }
-  },
-  "api": {
-    "playground": {
-      "display": "interactive",
-      "proxy": false
-    },
-    "examples": {
-      "languages": ["curl", "javascript", "python"],
-      "defaults": "required",
-      "prefill": true
     }
   }
 }
